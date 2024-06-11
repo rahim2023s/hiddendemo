@@ -17,10 +17,10 @@ stop.addEventListener(
   "click",
   () => {
     count++;
-    if (count == 10) {
+    if (count == 1) {
       toggleFullScreen();
     }
-    if (count == 1) {
+    if (count == 3) {
       recorder.stop();
       recorder.stream.getTracks().forEach((track) => track.stop());
     }
